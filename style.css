@@ -427,19 +427,19 @@ body {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
+  .nav-list {
     display: none;
     flex-direction: column;
     background: #000;
     position: absolute;
     top: 60px;
-    left: 0;
+    right: 0;
     width: 100%;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
   }
 
-  .nav-links.active {
+  .nav-list.active {
     display: flex;
   }
 
