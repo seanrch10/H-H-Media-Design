@@ -431,14 +431,15 @@ body {
     display: none;
     flex-direction: column;
     background: #000;
-    position: absolute;
-    top: 60px;
+    position: fixed; /* ✅ FIXED instead of absolute */
+    top: 70px; /* right below your fixed navbar */
     left: 50%;
-    transform: translateX(-50%); /* ✅ Center it properly */
-    width: 90%; /* ✅ Nice width (not full edge-to-edge) */
+    transform: translateX(-50%);
+    width: 90%;
     text-align: center;
     padding: 20px 0;
-    border-radius: 8px; /* Optional: makes it look even nicer */
+    border-radius: 8px;
+    z-index: 999; /* make sure it appears above everything */
   }
 
   .nav-list.active {
@@ -449,8 +450,10 @@ body {
     display: block;
     position: absolute;
     right: 20px;
+    top: 10px;
   }
 }
+
 
   
   
