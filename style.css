@@ -433,10 +433,12 @@ body {
     background: #000;
     position: absolute;
     top: 60px;
-    right: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* ✅ Center it properly */
+    width: 90%; /* ✅ Nice width (not full edge-to-edge) */
     text-align: center;
     padding: 20px 0;
+    border-radius: 8px; /* Optional: makes it look even nicer */
   }
 
   .nav-list.active {
