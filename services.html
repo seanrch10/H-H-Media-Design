@@ -15,10 +15,13 @@
       <img src="https://i.ibb.co/0pL7x8gL/Chat-GPT-Image-Apr-27-2025-07-41-29-PM.png" alt="H&H Media Design Logo">
     </a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="book.html">Book</a>
-      <a href="contact.html">Contact</a>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -85,12 +88,12 @@
 
 <script>
   const mobileMenu = document.getElementById('mobile-menu');
-  const navLinks = document.querySelector('.nav-links');
+  const navList = document.querySelector('.nav-list');
 
   mobileMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    navList.classList.toggle('active');
   });
 </script>
-  
+
 </body>
 </html>
