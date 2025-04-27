@@ -336,13 +336,13 @@ footer {
   padding-bottom: 0;
 }
 
-/* MOBILE NAV FIX */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .nav-list {
@@ -364,6 +364,7 @@ footer {
     display: flex;
   }
 }
+
 
 
 
